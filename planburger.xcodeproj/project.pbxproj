@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40990395FF64F1846DBE94A2 /* Pods_planburger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607103871E3B0EF2A9EF7BBC /* Pods_planburger.framework */; };
 		ECF95F4420A17AE300923FFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F4320A17AE300923FFF /* AppDelegate.swift */; };
 		ECF95F4620A17AE300923FFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F4520A17AE300923FFF /* ViewController.swift */; };
 		ECF95F4920A17AE300923FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF95F4720A17AE300923FFF /* Main.storyboard */; };
@@ -19,9 +20,13 @@
 		ECF95F6B20A1833200923FFF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6220A1833200923FFF /* FMDatabase.m */; };
 		ECF95F6C20A1833200923FFF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6620A1833200923FFF /* FMDatabaseAdditions.m */; };
 		ECF95F6D20A1833200923FFF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6820A1833200923FFF /* FMDatabasePool.m */; };
+		ECF95F6F20A1850C00923FFF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECF95F6E20A1850C00923FFF /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		607103871E3B0EF2A9EF7BBC /* Pods_planburger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_planburger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DE048C92FDF65041910868 /* Pods-planburger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planburger.release.xcconfig"; path = "Pods/Target Support Files/Pods-planburger/Pods-planburger.release.xcconfig"; sourceTree = "<group>"; };
+		CEC37B8DAC9D21241B20BF87 /* Pods-planburger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planburger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-planburger/Pods-planburger.debug.xcconfig"; sourceTree = "<group>"; };
 		ECF95F4020A17AE300923FFF /* planburger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planburger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF95F4320A17AE300923FFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF95F4520A17AE300923FFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		ECF95F6620A1833200923FFF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		ECF95F6720A1833200923FFF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		ECF95F6820A1833200923FFF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		ECF95F6E20A1850C00923FFF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,19 +57,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF95F5A20A1812000923FFF /* libsqlite3.tbd in Frameworks */,
+				40990395FF64F1846DBE94A2 /* Pods_planburger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4109F7909AC1616EDE239792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEC37B8DAC9D21241B20BF87 /* Pods-planburger.debug.xcconfig */,
+				71DE048C92FDF65041910868 /* Pods-planburger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECF95F3720A17AE300923FFF = {
 			isa = PBXGroup;
 			children = (
+				ECF95F6E20A1850C00923FFF /* Podfile */,
 				ECF95F5C20A1830900923FFF /* ThirdParty */,
 				ECF95F4220A17AE300923FFF /* planburger */,
 				ECF95F4120A17AE300923FFF /* Products */,
 				ECF95F5820A1812000923FFF /* Frameworks */,
+				4109F7909AC1616EDE239792 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF95F5920A1812000923FFF /* libsqlite3.tbd */,
+				607103871E3B0EF2A9EF7BBC /* Pods_planburger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECF95F5520A17AE300923FFF /* Build configuration list for PBXNativeTarget "planburger" */;
 			buildPhases = (
+				B603A9939EDF6FEC45455628 /* [CP] Check Pods Manifest.lock */,
 				ECF95F3C20A17AE300923FFF /* Sources */,
 				ECF95F3D20A17AE300923FFF /* Frameworks */,
 				ECF95F3E20A17AE300923FFF /* Resources */,
+				CDC63BE458517F9D40499BF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,11 +205,51 @@
 			files = (
 				ECF95F5120A17AE300923FFF /* LaunchScreen.storyboard in Resources */,
 				ECF95F4E20A17AE300923FFF /* Assets.xcassets in Resources */,
+				ECF95F6F20A1850C00923FFF /* Podfile in Resources */,
 				ECF95F4920A17AE300923FFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B603A9939EDF6FEC45455628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planburger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC63BE458517F9D40499BF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-planburger/Pods-planburger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-planburger/Pods-planburger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECF95F3C20A17AE300923FFF /* Sources */ = {
@@ -344,15 +405,13 @@
 		};
 		ECF95F5620A17AE300923FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC37B8DAC9D21241B20BF87 /* Pods-planburger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM9X742J63;
 				INFOPLIST_FILE = planburger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hafen.planburger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "planburger/Bridging-Header.h";
@@ -363,15 +422,13 @@
 		};
 		ECF95F5720A17AE300923FFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DE048C92FDF65041910868 /* Pods-planburger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM9X742J63;
 				INFOPLIST_FILE = planburger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hafen.planburger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "planburger/Bridging-Header.h";
