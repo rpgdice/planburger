@@ -13,6 +13,12 @@
 		ECF95F4C20A17AE300923FFF /* planburger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F4A20A17AE300923FFF /* planburger.xcdatamodeld */; };
 		ECF95F4E20A17AE300923FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF95F4D20A17AE300923FFF /* Assets.xcassets */; };
 		ECF95F5120A17AE300923FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF95F4F20A17AE300923FFF /* LaunchScreen.storyboard */; };
+		ECF95F5A20A1812000923FFF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF95F5920A1812000923FFF /* libsqlite3.tbd */; };
+		ECF95F6920A1833200923FFF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F5F20A1833200923FFF /* FMDatabaseQueue.m */; };
+		ECF95F6A20A1833200923FFF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6020A1833200923FFF /* FMResultSet.m */; };
+		ECF95F6B20A1833200923FFF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6220A1833200923FFF /* FMDatabase.m */; };
+		ECF95F6C20A1833200923FFF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6620A1833200923FFF /* FMDatabaseAdditions.m */; };
+		ECF95F6D20A1833200923FFF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF95F6820A1833200923FFF /* FMDatabasePool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,19 @@
 		ECF95F4D20A17AE300923FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF95F5020A17AE300923FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF95F5220A17AE300923FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF95F5920A1812000923FFF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ECF95F5B20A182B200923FFF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ECF95F5E20A1833200923FFF /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		ECF95F5F20A1833200923FFF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ECF95F6020A1833200923FFF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		ECF95F6120A1833200923FFF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		ECF95F6220A1833200923FFF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		ECF95F6320A1833200923FFF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		ECF95F6420A1833200923FFF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		ECF95F6520A1833200923FFF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		ECF95F6620A1833200923FFF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		ECF95F6720A1833200923FFF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		ECF95F6820A1833200923FFF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF95F5A20A1812000923FFF /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +60,10 @@
 		ECF95F3720A17AE300923FFF = {
 			isa = PBXGroup;
 			children = (
+				ECF95F5C20A1830900923FFF /* ThirdParty */,
 				ECF95F4220A17AE300923FFF /* planburger */,
 				ECF95F4120A17AE300923FFF /* Products */,
+				ECF95F5820A1812000923FFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +85,43 @@
 				ECF95F4F20A17AE300923FFF /* LaunchScreen.storyboard */,
 				ECF95F5220A17AE300923FFF /* Info.plist */,
 				ECF95F4A20A17AE300923FFF /* planburger.xcdatamodeld */,
+				ECF95F5B20A182B200923FFF /* Bridging-Header.h */,
 			);
 			path = planburger;
+			sourceTree = "<group>";
+		};
+		ECF95F5820A1812000923FFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECF95F5920A1812000923FFF /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECF95F5C20A1830900923FFF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				ECF95F5D20A1831D00923FFF /* fmdb */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		ECF95F5D20A1831D00923FFF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				ECF95F6520A1833200923FFF /* FMDatabase.h */,
+				ECF95F6220A1833200923FFF /* FMDatabase.m */,
+				ECF95F6120A1833200923FFF /* FMDatabaseAdditions.h */,
+				ECF95F6620A1833200923FFF /* FMDatabaseAdditions.m */,
+				ECF95F6320A1833200923FFF /* FMDatabasePool.h */,
+				ECF95F6820A1833200923FFF /* FMDatabasePool.m */,
+				ECF95F6720A1833200923FFF /* FMDatabaseQueue.h */,
+				ECF95F5F20A1833200923FFF /* FMDatabaseQueue.m */,
+				ECF95F5E20A1833200923FFF /* FMDB.h */,
+				ECF95F6420A1833200923FFF /* FMResultSet.h */,
+				ECF95F6020A1833200923FFF /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF95F4C20A17AE300923FFF /* planburger.xcdatamodeld in Sources */,
+				ECF95F6920A1833200923FFF /* FMDatabaseQueue.m in Sources */,
 				ECF95F4620A17AE300923FFF /* ViewController.swift in Sources */,
+				ECF95F6B20A1833200923FFF /* FMDatabase.m in Sources */,
 				ECF95F4420A17AE300923FFF /* AppDelegate.swift in Sources */,
+				ECF95F6D20A1833200923FFF /* FMDatabasePool.m in Sources */,
+				ECF95F6C20A1833200923FFF /* FMDatabaseAdditions.m in Sources */,
+				ECF95F6A20A1833200923FFF /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hafen.planburger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "planburger/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,6 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.hafen.planburger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "planburger/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
